@@ -1,4 +1,5 @@
-const ligado = document.querySelector('#turnOnOff');
+
+const interruptor = document.querySelector('#turnOff');
 const lampada= document.querySelector ('#lamp');
 
 function LampQuebrou(){
@@ -7,23 +8,12 @@ function LampQuebrou(){
 
 function lampOn () {
 
-    if( !LampQuebrou () || lampOff () ){
+    if( !LampQuebrou ()){
 
     lampada.src = './img/ligada.jpg';
-}
+    interruptor.textContent ='Ligado';
+}}
 
-    else  {
-
-        if (lampOn() == true){
-            return lampOff();
-        }
-        
-    }
-
-    
-
-
-}
 
 
 function lampOff () {
@@ -35,6 +25,10 @@ function lampOff () {
 function lampBroker () {
     
     lampada.src = './img/quebrada.jpg';
+}
+
+function lampOnOff{
+    if()
 }
 
 ligado.addEventListener ('click', lampOn,lampOff);
