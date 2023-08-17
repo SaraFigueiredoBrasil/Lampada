@@ -30,7 +30,7 @@ function lampBroker () {
 }
 
 function lampOnOff() {
-    if(interruptor.textContent == 'Ligar'){
+    if( interruptor.textContent == 'Ligar'){
         lampOn();
         interruptor.textContent = 'Desligar';
     }
